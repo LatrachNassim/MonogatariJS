@@ -95,7 +95,12 @@ monogatari.characters ({
 	'f': {
 		name: 'Fafelue',
 		color: '#ff8166'
+	},
+	'k': {
+		name: 'Kartyss',
+		color: '#9400D3'
 	}
+
 	
 });
 
@@ -181,12 +186,31 @@ monogatari.script ({
 		
 		"Vous ne comprenez pas pourquoi elle parle d’un renard sauvage. Vous lui dites simplement que vous avez reçu un message de sa part. La miko soupire légèrement et prend le temps de vous expliquer.", 
 		
-		"m Rhaaa vous êtes un peu long à la détente. Kartyss", 
+		"m Rhaaa vous êtes un peu long à la détente.", 
+		"m Kartyss n’est pas une renarde comme celles du temple.",
+		"m Nous sommes unis à Inari O-kami, la déesse des renards, contrairement à cette fauteuse de troubles.", 
+		"m N’étant pas liée à la déesse, Kartyss se permet plein de choses sans se soucier des retombées karmiques. Et nous, on se retrouve à réparer ses bêtises.", 
+
+		"La miko pousse un long soupir.", 
+		"Vous haussez un sourcil.", 
+		"Vous avez l’impression que vous risquez d’avoir des problèmes si vous commencez à traîner avec cette étrange Kartyss.",
 		
-
-
-
-
+		"m Vous voulez vraiment la rencontrer ? Essayez de jeter un coup d'œil à la rue adjacente au temple. Vous trouverez l’entrée d’une salle d’arcade. Elle se cache très souvent là-bas.",
 		
+		"Vous remerciez la jeune femme pour toutes ces informations. Vous vous dirigez vers le lieu indiqué.", 
+		"Il s’agit d’une salle d’arcade. Les néons vous pètent les yeux et du bruit se fait entendre à l’intérieur.", 
+		"Vous décidez d’entrer à l'intérieur. Vous voyez qu’il y a beaucoup de monde. Au centre, se trouvent 2 bornes.", 
+		"Un combat de “titans” est en cours. Quelqu’un se bats contre une jeune femme renard. Cette dernière s’énerve bien comme il faut sur cette pauvre borne.", 
+		"Le combat vous tient en haleine et l'euphorie de la salle vous transporte. Soudainement victoire !", 
+		"La jeune femme renard gagne contre son adversaire. Elle sautille de joie et en se retournant, elle vous aperçoit.", 
+		"Vous voyez qu’un sourire illumine son visage.",
+
+		"k Vous êtes enfin arrivé ! J’avais peur que mon invitation vous fasse un peu peur.",
+
+		"Vous lui demandez la raison de son invitation. Kartyss bombe le torse et vous regarde avec beaucoup de détermination.",
+
+		"k C’est très simple ! Mon but … C’est d’atteindre la tête du classement d’Arcade City !", 
+		"k Et pour cela … huhu … J’ai besoin de vous tous pour y arriver !"
+
 	]
 });

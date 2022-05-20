@@ -106,7 +106,7 @@ monogatari.script ({
 
 		"Baroudeur dans l’âme, vous aimez voyager de villes en villes et faire la connaissance de nouvelles personnes. C’est tout naturellement que vos pas vous ont conduit jusqu’à Arcade City. [...] Bip Bip ! Oh ! vous venez de recevoir un message. Étrange, nan ? Vous regardez votre téléphone.", 
 
-		 "Kartyss souhaite devenir votre amie. Accepter ? Décliner ?",   
+		"Kartyss souhaite devenir votre amie. Accepter ? Décliner ?",   
 		
 		"Vous regardez le message en haussant un sourcil. Qui avait bien pu envoyer ce message ? Et surtout qui était cette Kartyss qui souhaite devenir votre amie ? Intrigué, vous décidez de profiter de votre soirée pour chercher cette fameuse Kartyss. Malheureusement, vous ne savez pas où chercher.",
 		
@@ -136,7 +136,8 @@ monogatari.script ({
 		"l …",
 		"l Comment ça un dragon ça n’existe pas? Tu n’es pas du coin à ce que je vois.", 
 		"l Cette ville est remplie de personnes venant de mondes différents. Des gens avec des attributs d’animaux, tu en verras pas mal ici!",
-		"l Je ne sais pas comment tout le monde s’est retrouvé ici d’ailleurs, mais on s’occupe en jouant aux jeux vidéo. Moi mon truc, c’est la guitare. Et tirer sur des gens.", 
+		"l Je ne sais pas comment tout le monde s’est retrouvé ici d’ailleurs, mais on s’occupe en jouant aux jeux vidéo.",
+		"l Moi mon truc, c’est la guitare. Et tirer sur des gens.", 
 		"l … Hum? Tu demandes si Kartyss est ici ?", 
 		"l Ahah, bien sûr! Je crois bien que son truc c’est plutôt les RPG et les jeux rétro. Je l’ai déjà vu jouer à des roguelike ou des jeux narratifs aussi.",
 		"l Je te préviens par contre… J’ai entendu dire qu’elle aimait bien quand ça explose dans tous les sens.",

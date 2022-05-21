@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 /**
  * =============================================================================
  * This is the file where all your styling should go in.
@@ -97,7 +101,9 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
+	font-family: 'VT323', monospace;
+	font-size: 1.5em;
+	padding: 20px;
 }
 
 /* Character Name Style */
@@ -112,7 +118,9 @@ button:hover {
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
-
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5);
 }
 
 /* Other Images Styles */

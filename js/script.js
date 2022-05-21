@@ -179,26 +179,45 @@ monogatari.script ({
 	// The game starts here.
 	'Start': [
 		'show background road with fadeIn',
-		"<i>Baroudeur dans l’âme, vous aimez voyager de ville en ville et faire la connaissance de nouvelles personnes. C’est tout naturellement que vos pas vous ont conduit jusqu’à Arcade City. [...] Bip Bip ! Oh ! vous venez de recevoir un message. Étrange, nan ? Vous regardez votre téléphone.</i>", 
-		"<i>Kartyss souhaite devenir votre amie. Accepter ? Décliner ?",   
-		"<i>Vous regardez le message en haussant un sourcil. Qui avait bien pu envoyer ce message ? Et surtout qui était cette Kartyss qui souhaite devenir votre amie ? Intrigué, vous décidez de profiter de votre soirée pour chercher cette fameuse Kartyss. Malheureusement, vous ne savez pas où chercher.Vous décidez d’aller demander des informations aux natifs.</i>",
+		"<i>Baroudeur dans l’âme, vous aimez voyager de ville en ville et faire la connaissance de nouvelles personnes. C’est tout naturellement que vos pas vous ont conduit jusqu’à Arcade City.</i>",
+		"<i><b>Bip Bip !</b> Oh ! Vous venez de recevoir un message. Étrange, nan ?</i>",
+		"<i> Vous regardez votre téléphone.</i>", 
+		"<b>Kartyss souhaite devenir votre amie.</b>",
+		{'Choice': {
+			'Accept': {
+				'Text': 'Accepter.',
+				'Do': 'jump Suite'
+			},
+			'Refuse': {
+				'Text': 'Refuser.',
+				'Do': 'jump Suite'
+			}
+		}}
+	],
+	'Suite':[	
+		"<i>Vous regardez le message en haussant un sourcil...<br> Qui avait bien pu envoyer ce message ? Et surtout qui était cette Kartyss qui souhaite devenir votre amie ? </i>",
+		"<i>Intrigué, vous décidez de profiter de votre soirée pour chercher cette fameuse Kartyss. Malheureusement, vous ne savez pas où chercher.</i>", 
 		'show background building with fadeIn',
+		"<i>Vous décidez d’aller demander des informations aux natifs.</i>",
 		'show character f s01 at center with fadeIn',
 		"<i>Vous vous rapprochez d’une personne qui est en train de peindre sur un mur et vous lui demandez qui est Kartyss.</i>",
 
 
 		// Fafelue
 		'show character f s07',
-		"f Oh ! Elle vous a envoyé un message ?! Vous en avez de la chance ! Kartyss est du genre très discret. Un peu comme une voleuse préparent son crime. Hahaha. Si vous avez reçu ce message, c’est parce que vous êtes nouveau en ville ?",
+		"f Oh ! Elle vous a envoyé un message ?! Vous en avez de la chance ! Kartyss est du genre très discret. Un peu comme une voleuse préparent son crime. Hahaha.",
+		"Si vous avez reçu ce message, c’est parce que vous êtes nouveau en ville ?",
 		'show character f s04',
 		"<i>Vous acquiescez d’un hochement de tête. Fafelue vous regarde et affiche un grand sourire.</i>" ,
 		'show character f s06',
 		"f Vous allez voir, vous allez beaucoup vous amuser avec elle !",
 		'hide character f with fadeOut',
-		"<i>Fafelue vous laisse et retourne vandaliser un autre mur avec ses magnifiques fresques. Vous reprenez votre chemin avec l'objectif de trouver d'autres informations. Un son de guitare se fait entendre, non loin de vous.</i>",
+		"<i>Fafelue vous laisse et retourne vandaliser un autre mur avec ses magnifiques fresques.</i>",
+		"Vous reprenez votre chemin avec l'objectif de trouver d'autres informations. Un son de guitare se fait entendre, non loin de vous.</i>",
 
 		'show background city with fadeIn',
-		"<i>Vous vous approchez et voyez, un dragon ? jouer de la guitare. Vous vous dites que cette ville est bien étrange. Cependant cela ne vous empêche pas de poser des questions à ce dragon guitariste.</i>",
+		"<i>Vous vous approchez et voyez... un dragon ?</i>",
+		"<i>Il semblait jouer de la guitare. Vous vous dites que cette ville est bien étrange. Cependant cela ne vous empêche pas de poser des questions à ce dragon guitariste.</i>",
 
 		//Loki
 		'show character l s02 with fadeIn',
@@ -227,7 +246,10 @@ monogatari.script ({
 		"l Si tu tiens tant à la retrouver, ça sera à tes risques et périls.",
 		'hide character l with fadeOut', 
 
-		"<i>Après votre conversation avec Loki, vous êtes encore dans le flou. Vous savez que cette Kartyss est assez discrète. Qu’elle aime différents types de jeux, mais quand ça part dans tous les sens ça l’amuse encore plus. La première chose qui vous vient en tête, c’est que cette personne est du genre Chaotique. Soudain, quelqu’un tire sur votre manche. Vous vous retournez et vous faites face à un petit garçon.</i>",
+		"<i>Après votre conversation avec Loki, vous êtes encore dans le flou.</i>",
+		"<i>Vous savez que cette Kartyss est assez discrète. Qu’elle aime différents types de jeux, mais quand ça part dans tous les sens ça l’amuse encore plus.</i>",
+		"<i>La première chose qui vous vient en tête, c’est que cette personne est du genre Chaotique.</i>",
+		"<i>Soudain, quelqu’un tire sur votre manche. Vous vous retournez et vous faites face à un petit garçon.</i>",
 
 		'show background festival with fadeIn',
 
@@ -275,7 +297,8 @@ monogatari.script ({
 
 		'show background temple with fadeIn',
 		// Miko
-		"<i>Grâce aux informations d’Aquakwa, vous vous dirigez vers ce fameux temple. Vous affichez un air surpris en voyant que ce dernier dénote beaucoup avec la ville entière. Cette dernière était plongée dans un crépuscule perpétuel, lui donnant des airs très mystérieux.</i>",
+		"<i>Grâce aux informations d’Aquakwa, vous vous dirigez vers ce fameux temple.</i>",
+		"<i> Vous affichez un air surpris en voyant que ce dernier dénote beaucoup avec la ville entière. Cette dernière était plongée dans un crépuscule perpétuel, lui donnant des airs très mystérieux.</i>",
 		'show character m s01 with fadeIn',
 		"m EH ! Vous ! Qu’est-ce que vous faites ici ? On ne reçoit plus de visiteurs à cette heure-ci !", 
 		"<i>Visiblement contrariée de votre présence, la Miko s’approche dans l’unique but de vous faire déguerpir. Cependant, vous lui demandez, si elle sait des choses sur Kartyss.</i>", 
@@ -299,13 +322,14 @@ monogatari.script ({
 		'hide character m',
 
 		// Kartyss
+		"<i>Vous remerciez la jeune femme pour toutes ces informations.</i>",
 		'show background alley with fadeIn',
-		"<i>Vous remerciez la jeune femme pour toutes ces informations. Vous vous dirigez vers le lieu indiqué.</i>", 	
+		"<i>Vous vous dirigez vers le lieu indiqué.</i>", 	
 		"<i>Il s’agit d’une salle d’arcade. Les néons vous pètent les yeux et du bruit se fait entendre à l’intérieur.</i>", 
 		
 		'show background arcade with fadeIn',
 		"<i>Vous décidez d’entrer à l'intérieur. Vous voyez qu’il y a beaucoup de monde. Au centre, se trouvent 2 bornes.</i>", 
-		"<i>Un combat de “titans” est en cours. Quelqu’un se bats contre une jeune femme renard. Cette dernière s’énerve bien comme il faut sur cette pauvre borne.</i>", 
+		"<i>Un combat de “titans” est en cours. Quelqu’un se bat contre une jeune femme renard. Cette dernière s’énerve bien comme il faut sur cette pauvre borne.</i>", 
 		"<i>Le combat vous tient en haleine et l'euphorie de la salle vous transporte. Soudainement victoire !</i>", 
 		"<i>La jeune femme renard gagne contre son adversaire. Elle sautille de joie et en se retournant, elle vous aperçoit.</i>", 
 		"<i>Vous voyez qu’un sourire illumine son visage.</i>",
@@ -316,7 +340,8 @@ monogatari.script ({
 
 		"k C’est très simple ! Mon but … C’est d’atteindre la tête du classement d’Arcade City !", 
 		'show background Kartyss with fadeIn',
-		"k Et pour cela … huhu … J’ai besoin de vous tous pour y arriver !"
+		"k Et pour cela … huhu … J’ai besoin de vous tous pour y arriver !",
+		"end"
 
 	]
 });

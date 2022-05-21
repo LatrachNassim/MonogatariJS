@@ -86,7 +86,7 @@ monogatari.characters ({
 	
 	'me': {
 		name: 'Memento',
-		color: '#6f00b3',
+		color: '#EE82EE',
 		directory: 'memento', 
         sprites: {
             s01: '01.png',
@@ -121,7 +121,7 @@ monogatari.characters ({
 	},
 	'l': {
 		name: 'Loki',
-		color: '#0c0085',
+		color: '#2588ff',
 		directory: 'loki', 
         sprites: {
             s02: '02.png',
@@ -139,7 +139,7 @@ monogatari.characters ({
 	},
 	'm': {
 		name: 'Miko',
-		color: '#50aa300',
+		color: '#ff0921',
 		directory: 'miko', 
         sprites: {
             s01: '01.png',

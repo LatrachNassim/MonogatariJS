@@ -69,7 +69,15 @@ monogatari.assets ('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
-
+	'alley': 'alley.png',
+    'arcade': 'arcade.png',
+	'city': 'city.png',
+	'moon': 'moon.png',
+	'road': 'road.png',
+	'temple': 'temple.png',
+	'festival':'festival.png',
+	'building': 'buildings.png',
+	'Kartyss': 'Kartyss.png'
 });
 
 
@@ -170,10 +178,11 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'show scene #f7f6f6 with fadeIn',
+		'show background road with fadeIn',
 		"Baroudeur dans l’âme, vous aimez voyager de ville en ville et faire la connaissance de nouvelles personnes. C’est tout naturellement que vos pas vous ont conduit jusqu’à Arcade City. [...] Bip Bip ! Oh ! vous venez de recevoir un message. Étrange, nan ? Vous regardez votre téléphone.", 
 		"Kartyss souhaite devenir votre amie. Accepter ? Décliner ?",   
 		"Vous regardez le message en haussant un sourcil. Qui avait bien pu envoyer ce message ? Et surtout qui était cette Kartyss qui souhaite devenir votre amie ? Intrigué, vous décidez de profiter de votre soirée pour chercher cette fameuse Kartyss. Malheureusement, vous ne savez pas où chercher.",
+		'show background building with fadeIn',
 		'show character f s01 at center with fadeIn',
 		"Vous vous rapprochez d’une personne qui est en train de peindre sur un mur.",
 
@@ -188,7 +197,7 @@ monogatari.script ({
 		'hide character f with fadeOut',
 		"Fafelue vous laisse et retourne vandaliser un autre mur avec ses magnifiques fresques. Vous reprenez votre chemin avec l'objectif de trouver d'autres informations. Un son de guitare se fait entendre, non loin de vous.",
 
-
+		'show background city with fadeIn',
 		"Vous vous approchez et voyez, un dragon ? jouer de la guitare. Vous vous dites que cette ville est bien étrange. Cependant cela ne vous empêche pas de poser des questions à ce dragon guitariste.",
 
 		//Loki
@@ -220,6 +229,7 @@ monogatari.script ({
 
 		" Après votre conversation avec Loki, vous êtes encore dans le flou. Vous savez que cette Kartyss est assez discrète. Qu’elle aime différents types de jeux, mais quand ça part dans tous les sens ça l’amuse encore plus. La première chose qui vous vient en tête, c’est que cette personne est du genre Chaotique. Soudain, quelqu’un tire sur votre manche. Vous vous retournez et vous faites face à un petit garçon.",
 
+		'show background festival with fadeIn',
 
 		// Memento
 		'show character me s01 with fadeIn',
@@ -242,6 +252,8 @@ monogatari.script ({
 
 		"Le jeune homme repart aussi soudainement qu’il est apparu en vous laissant avec encore plus d’interrogation. Vous continuez votre balade dans Arcade City. Vous êtes arrêté par une nouvelle personne à l’apparence bien singulière.",
 
+
+		'show background moon with fadeIn',
 		// Aquakwa
 		'show character a s02 with fadeIn',
 		"a Hey! C’est toi l’inconnu qui cherche Kartyss partout ?",
@@ -261,6 +273,7 @@ monogatari.script ({
 		'a Bon courage !',
 		'hide character a',
 
+		'show background temple with fadeIn',
 		// Miko
 		"Grâce aux informations d’Aquakwa, vous vous dirigez vers ce fameux temple. Vous affichez un air surpris en voyant que ce dernier dénote beaucoup avec la ville entière. Cette dernière était plongée dans un crépuscule perpétuel, lui donnant des airs très mystérieux.",
 		'show character m s01 with fadeIn',
@@ -286,8 +299,11 @@ monogatari.script ({
 		'hide character m',
 
 		// Kartyss
+		'show background alley with fadeIn',
 		"Vous remerciez la jeune femme pour toutes ces informations. Vous vous dirigez vers le lieu indiqué.", 	
 		"Il s’agit d’une salle d’arcade. Les néons vous pètent les yeux et du bruit se fait entendre à l’intérieur.", 
+		
+		'show background arcade with fadeIn',
 		"Vous décidez d’entrer à l'intérieur. Vous voyez qu’il y a beaucoup de monde. Au centre, se trouvent 2 bornes.", 
 		"Un combat de “titans” est en cours. Quelqu’un se bats contre une jeune femme renard. Cette dernière s’énerve bien comme il faut sur cette pauvre borne.", 
 		"Le combat vous tient en haleine et l'euphorie de la salle vous transporte. Soudainement victoire !", 
@@ -299,6 +315,7 @@ monogatari.script ({
 		"Vous lui demandez la raison de son invitation. Kartyss bombe le torse et vous regarde avec beaucoup de détermination.",
 
 		"k C’est très simple ! Mon but … C’est d’atteindre la tête du classement d’Arcade City !", 
+		'show background Kartyss with fadeIn',
 		"k Et pour cela … huhu … J’ai besoin de vous tous pour y arriver !"
 
 	]

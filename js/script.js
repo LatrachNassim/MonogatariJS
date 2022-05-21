@@ -77,7 +77,7 @@ monogatari.assets ('scenes', {
 	'temple': 'temple.png',
 	'festival':'festival.png',
 	'building': 'buildings.png',
-	'Kartyss': 'Kartyss.png'
+	'Kartyss': 'Kartyss02.png'
 });
 
 
